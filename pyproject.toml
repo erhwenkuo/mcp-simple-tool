@@ -1,0 +1,20 @@
+[project]
+name = "mcp-simple-tool"
+version = "0.1.0"
+description = "一個簡單的 MCP 伺服器，用來讓AI Agent來取得一個公開網站網頁內容的工具"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Erhwen, Kuo" }]
+
+maintainers = [
+    { name = "Erhwen, Kuo", email = "erhwenkuo@gmailcom" }
+]
+
+license = { text = "MIT" }
+
+dependencies = [
+    "mcp>=1.5.0",
+]
+
+[project.scripts]
+mcp-simple-tool = "mcp_simple_tool.server:main"
