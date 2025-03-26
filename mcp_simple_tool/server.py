@@ -37,6 +37,8 @@ async def list_tools() -> list[types.Tool]:
             name="fetch",
             description="Fetches a website and returns its content",
             inputSchema={
+                "type": "object",
+                "required": ["url"],
                 "properties": {
                     "url": {
                         "type": "string",
